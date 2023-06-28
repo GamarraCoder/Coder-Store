@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--Enlazando normalize-->
+   <link rel="preload" href="css/normalize.css" as="style">
+   <link rel="stylesheet" href="css/normalize.css">
+    
+   <!--Enlazando hoja de estilo (CSS)-->
+   <link rel="preload" href="css/styles.css" as="style">
+   <link rel="stylesheet" href="css/styles.css">
+
+   <!--Agregando fuentes-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Coder-Store</title>
+
+</head>
+<body>
+
+    <header class="header">
+        
+        <a href="index.html">
+            
+            <h1 class="header__titulo">
+                
+                Coder-<span>Store<span>
+            </h1>
+        </a>
+</header>
+
+<!--Añadiendo menu de navegacion-->
+<nav class="navegacion">
+<a href="index.html" class="navegacion__enlace">Tienda</a>
+<a href="nosotros.html" class="navegacion__enlace">Nosotros<a>
+
+</nav>
+<main class="contenedor">
+
+<h2 class="Productos">ReactJs</h2>
+
+<div class="camisas">
+
+<img src="img/1.jpg" class="camisa__imagen" alt="imagen del producto">
+
+<div class="camisas__contenido">
+<p class="parrafo_producto">En Coder Store, tu compra va sin cobro a destino, para que disfrutes de una experiencia de compra sin preocupaciones. Nuestro servicio de envío llega a cualquier parte del país, y dependiendo de tu ubicación, tu pedido puede tardar solo 1-2 días hábiles en llegar a tus manos.</p>
+
+<p class="parrafo_producto">Además, te aseguramos que en Coder Store encontrarás las camisas con temáticas de tecnología y programación más originales y divertidas del mercado. No pierdas la oportunidad de lucir tu pasión por la informática y la tecnología con nuestras camisas de alta calidad y durabilidad.</p>
+    
+<p class="parrafo_producto">Si estás buscando una experiencia de compra que te haga sentir seguro y satisfecho, nosotros estamos aquí para ayudarte. 
+    Anímate a probar y descubre por ti mismo lo que tenemos para ofrecer.
+</p>
+
+<!--Formulario-->
+<form class="formulario">
+
+<select class="formulario__campo">
+    <option disabled selected>--Seleccionar Talla--</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+
+<input type="number" name="cantidad" placeholder="--Cantidad--" min="1" class="formulario__campo cantidad">
+
+
+<input type="submit" value="Enviar pedido"  class="formulario__submit">
+
+</form>
+</div> <!--Camisas-contenido-->
+
+</div> <!--Camisas-->
+
+</main>
+
+
+<footer class="footer">
+<p class="footer__texto">Coder-Store Todos los derechos reservados 2024 &copy;</p>
+</footer>
+</body>
+</html>
